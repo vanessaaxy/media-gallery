@@ -11,6 +11,13 @@ margin: 0;
 } /*resetting the dimesnsions of the whole page*/
 
 /*-- Document Styles --*/
+body {
+  font-family: "Lato", sans-serif;
+  height: 100%
+  color: #111;
+  line-height: 1.8;
+  background-color: #FDF5E6;
+}
 footer{
   background-color: #B0C4DE;
   color: #111;
