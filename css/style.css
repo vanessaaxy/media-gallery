@@ -72,5 +72,38 @@ nav a:hover, nav a:active {
 padding: 1em;
 }
 .one .thumb{
+  background-image: url('../img/nyu.jpg');
+}
+.two .thumb{
   background-image: url('../img/deer.jpg');
+}
+.three .thumb{
+  background-image: url('../img/zion2.jpg');
+}
+.four .thumb{
+  background-image: url('../img/market.jpg');
+}
+.five .thumb{
+  background-image: url('../img/horses.jpg');
+}
+.six .thumb{
+  background-image: url('../img/ocean-city.jpg');
+}
+.seven .thumb{
+  background-image: url('../img/philly.jpg');
+}
+.eight .thumb{
+  background-image: url('../img/pier.jpg');
+}
+.nine .thumb{
+  background-image: url('../img/river.jpg');
+}
+.ten .thumb{
+  background-image: url('../img/san-diego.jpg');
+}
+.eleven .thumb{
+  background-image: url('../img/sunset-cliff.jpg');
+}
+.twelve .thumb{
+  background-image: url('../img/zion.jpg');
 }
