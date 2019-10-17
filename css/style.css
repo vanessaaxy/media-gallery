@@ -12,20 +12,27 @@ margin: 0;
 
 /*-- Document Styles --*/
 footer{
-  background-color: #333;
-  color: #DDD;
+  background-color: #B0C4DE;
+  color: #111;
   padding: 1em;
   text-align: center;
 }
-nav {
+nav{
   display: flex;
-  justify-content: space-between;
-  background-color: #333; /*this is more specific so the color DDD won't show. need to create nav a*/
-  color: #DDD;
-  padding: 1em;
+  justify-content: flex-start;
+  background-color: #B0C4DE;
 }
-nav a {
-  color: #DDD;
+nav a{
+  padding: 8px 16px;
+  text-align: left;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 20px;
+  color: #111;
+}
+nav a:hover, nav a:active {
+  color: #F0F8FF;
+  text-decoration: underline;
 }
 .slideshow{
   background-color: #CCC;
