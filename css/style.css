@@ -1,0 +1,62 @@
+/*-- Global Styles --*/
+:root {
+  font-size: 18px;
+}
+*{ /*selector that selects everyting*/
+  box-sizing: border-box;
+}
+body, section, div, article, aside, h1, h2, h3, h4, h5, h6, p {
+padding: 0;
+margin: 0;
+} /*resetting the dimesnsions of the whole page*/
+
+/*-- Document Styles --*/
+footer{
+  background-color: #333;
+  color: #DDD;
+  padding: 1em;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333; /*this is more specific so the color DDD won't show. need to create nav a*/
+  color: #DDD;
+  padding: 1em;
+}
+nav a {
+  color: #DDD;
+}
+.slideshow{
+  background-color: #CCC;
+  width: 100%; /*fills the container*/
+  height: 400px;
+}
+.thumb {
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 56%; /*or padding: 56% (all around)*/
+}
+.grid-container{
+  display: grid;
+  grid-gap: 1em;
+  grid-template-column: 1fr;
+}
+@media screen and (min-width: 550px) { /*for media screens that are 550 and above, set two columns, 1fr each*/
+.grid-container{grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (min-width: 768px) { /*for media screens that are 768 and above, set three columns, 1fr each. ipad, iphone portrait*/
+.grid-container{grid-template-columns: repeat(3, 1fr);}
+}
+@media screen and (min-width: 990px) { /*for media screens that are 990 and above, set four columns, 1fr each*/
+.grid-container{grid-template-columns: repeat(4, 1fr);}
+}
+.card{
+  border: 1px solid #333;
+}
+.card-content{
+padding: 1em;
+}
+.one .thumb{
+  background-image: url('../img/deer.jpg');
+}
