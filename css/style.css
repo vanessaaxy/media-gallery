@@ -42,7 +42,7 @@ nav a{
 }
 .trigram{
   font-size: 1.75em;
-  display: none; /*don't appear on a normal screen*/
+  display: none;
 }
 @media screen and (max-width: 767px){
   .topnav a {display: none;}
@@ -50,13 +50,13 @@ nav a{
 }
 @media screen and (max-width: 767px) {
   .topnav.responsive {align-items: center;}
-  .topnav.responsive a {display: inherit;} /*trigram only appears when the screen gets smaller, like on mobile phones*/
+  .topnav.responsive a {display: inherit;}
   .topnav.responsive a.trigram {visibility: hidden; position: absolute; right: 3%; top: 2%;}
-  .topnav.responsive a.trigram::after {content:'\000D7'; visibility: visible; text-indent: -.5em;} /*close button for the trigram. \000D7 is the X sign. ::after is the close selector. the x character has the same properties as the trigram, i.e. the navToggle js function*/
+  .topnav.responsive a.trigram::after {content:'\000D7'; visibility: visible; text-indent: -.5em;}
 }
 nav a:hover, nav a:active {
   color: #F0F8FF;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .slideshow{
   background-color: #CCC;

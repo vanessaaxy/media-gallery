@@ -8,4 +8,3 @@ function navToggle() { // creates a new function named navToggle
     x.className = "topnav";         // set class to .topnav
   } //closes if-else
 } //closes function
-// the navToggle and green words match up with the html
