@@ -16,7 +16,7 @@ body {
   height: 100%
   color: #111;
   line-height: 1.8;
-  background-color: #FDF5E6;
+  background-color: #ECE2D0;
 }
 footer{
   background-color: #B0C4DE;
@@ -27,7 +27,7 @@ footer{
 nav{
   display: flex;
   justify-content: flex-start;
-  background-color: #B0C4DE;
+  background-color: #ECECEC;
 }
 @media screen and (min-width: 768px) {
   nav {flex-direction: row;}
@@ -72,6 +72,7 @@ nav a:hover, nav a:active {
   display: grid;
   grid-gap: 1em;
   grid-template-column: 1fr;
+  padding: 1em;
 }
 @media screen and (min-width: 550px) { /*for media screens that are 550 and above, set two columns, 1fr each*/
 .grid-container{grid-template-columns: repeat(2, 1fr);}
