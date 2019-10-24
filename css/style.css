@@ -58,11 +58,6 @@ nav a:hover, nav a:active {
   color: #F0F8FF;
   text-decoration: none;
 }
-.slideshow{
-  background-color: #CCC;
-  width: 100%; /*fills the container*/
-  height: 400px;
-}
 .thumb {
   background-position: center center;
   background-size: cover;
@@ -124,4 +119,9 @@ padding: 1em;
 }
 .twelve .thumb{
   background-image: url('../img/zion.jpg');
+}
+/*slideshow rules*/
+.slideshow{
+  background-color: #CCC;
+  width: 100%; /*fills the container*/
 }
