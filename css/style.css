@@ -177,6 +177,7 @@ padding: 1em;
   display: inline-block; /*-- displays in a horizontal line --*/
   transition: all 250ms ease-in-out; /*-- allows opacity change to take time --*/
   opacity: .5;
+  padding-top: 1em;
 }
 .dot img{
   width: 100%;
