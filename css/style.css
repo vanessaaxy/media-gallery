@@ -122,6 +122,13 @@ padding: 1em;
 }
 /*slideshow rules*/
 .slideshow{
-  background-color: #CCC;
   width: 100%; /*fills the container*/
+}
+.slideshow img{
+  width: 100%;
+}
+.slideshow-wrap{
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
 }
