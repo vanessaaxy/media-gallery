@@ -38,7 +38,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-// Image modal functions 
+// Image modal functions
 $(".button").on("click", function() { // when item with class of button is clicked, fire function
   var modal = $(this).data("modal"); // sets modal var equal to data attribute
   $(modal).show(); // opens up modal (much code hidden here by jQuery)
