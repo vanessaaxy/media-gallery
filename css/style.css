@@ -120,6 +120,7 @@ padding: 1em;
 .twelve .thumb{
   background-image: url('../img/zion.jpg');
 }
+
 /*slideshow rules*/
 .slideshow{
   width: 100%; /*fills the container*/
@@ -133,11 +134,21 @@ padding: 1em;
   margin: auto;
 }
 
-.prev, .next{
+.prev, .next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  color: #DDD;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .next{
   right: 0;
@@ -148,13 +159,30 @@ padding: 1em;
 .dot-wrap{
   text-align: center;
 }
+.caption {
+  background: rgba(0,0,0,0.4); /*-- transparent black background --*/
+  color: #f2f2f2; /*-- sets color to almost white --*/
+  font-size: 22px; /*-- sets font size --*/
+  padding: 8px 12px; /*-- sets caption padding --*/
+  position: absolute; /*-- positions caption text absolutely--*/
+  bottom: 8px; /*-- sets position 8px from bottom --*/
+  width: 100%; /*-- sets width equal to container width --*/
+  text-align: center; /*-- aligns text center --*/
+}
 .dot{
-  width: 20%;
-  background: #BBB;
-  display: inline-block;
+  cursor:pointer; /*-- changes hover cursor to the hand --*/
+  height: auto; /*-- sets height of pics --*/
+  width: 24%; /*-- sets width of pics --*/
+  margin: 0 2px; /*-- adds margin between pics --*/
+  display: inline-block; /*-- displays in a horizontal line --*/
+  transition: all 250ms ease-in-out; /*-- allows opacity change to take time --*/
+  opacity: .5;
 }
 .dot img{
-  width: 100%
+  width: 100%;
+}
+.active, .dot:hover {
+  opacity: 1; /*-- makes fully visible when hovered  --*/
 }
 .dot.active{
   background: #333;
