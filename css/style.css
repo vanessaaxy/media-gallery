@@ -132,3 +132,30 @@ padding: 1em;
   max-width: 1440px;
   margin: auto;
 }
+
+.prev, .next{
+  position: absolute;
+  top: 50%;
+  width: auto;
+  color: #DDD;
+}
+.next{
+  right: 0;
+}
+.prev:hover, .next:hover{
+  background: rgba(0,0,0,0.5);
+}
+.dot-wrap{
+  text-align: center;
+}
+.dot{
+  width: 20%;
+  background: #BBB;
+  display: inline-block;
+}
+.dot img{
+  width: 100%
+}
+.dot.active{
+  background: #333;
+}
