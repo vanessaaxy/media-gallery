@@ -126,11 +126,6 @@ nav a:hover, nav a:active {
 .dot.active{background: #333;}
 
 /*article style*/
-.thumb {
-  background-position: center center;
-  background-size: cover;
-  padding-bottom: 56%; /*or padding: 56% (all around)*/
-}
 .grid-container{
   display: grid;
   grid-gap: 1em;
@@ -147,9 +142,22 @@ nav a:hover, nav a:active {
 .grid-container{grid-template-columns: repeat(4, 1fr);}
 }
 .card{
-  border: 1px solid #333;
+  border: 2px solid #333;
+  border-radius: 4px;
+  padding: .5em;
 }
-.card-content{padding: 1em;}
+.thumb {
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 56%; /*or padding: 56% (all around)*/
+  border-radius: 4px 4px 0 0;
+}
+.card-content{
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .one .thumb{background-image: url('../img/nyu.jpg');}
 .two .thumb{background-image: url('../img/deer.jpg');}
