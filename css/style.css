@@ -171,3 +171,27 @@ nav a:hover, nav a:active {
 .ten .thumb{background-image: url('../img/san-diego.jpg');}
 .eleven .thumb{background-image: url('../img/sunset-cliff.jpg');}
 .twelve .thumb{background-image: url('../img/zion.jpg');}
+
+.card-text {
+  font-size: .80em;
+  line-height: 1.2;
+  align-self: flex-start;
+}
+.card-button {
+
+  padding: .45em .7em .4em .7em;
+  border-radius: 200px; /*doesn't work!!!*/
+  font-size: .7em;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.card-button, .card-button:visited {
+  color: var(--prime);
+  border: 1.5px solid var(--prime);
+  transition: all 250ms ease-in-out;
+}
+.card-button:hover, button.card-more:active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
