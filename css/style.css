@@ -178,7 +178,6 @@ nav a:hover, nav a:active {
   align-self: flex-start;
 }
 .card-button {
-
   padding: .45em .7em .4em .7em;
   border-radius: 200px; /*doesn't work!!!*/
   font-size: .7em;
