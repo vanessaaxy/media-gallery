@@ -52,7 +52,7 @@ nav a{
   .topnav.responsive {align-items: center;}
   .topnav.responsive a {display: inherit;}
   .topnav.responsive a.trigram {visibility: hidden; position: absolute; right: 3%; top: 2%;}
-  .topnav.responsive a.trigram::after {content:'\000D7'; visibility: visible; text-indent: -.5em;}
+  .topnav.responsive a.trigram::after {content:'\000D7'; visibility: visible; text-indent: -1em;} /*can't get the x to move further up*/
 }
 nav a:hover, nav a:active {
   color: #F0F8FF;
