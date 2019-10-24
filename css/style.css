@@ -58,43 +58,6 @@ nav a:hover, nav a:active {
   color: #F0F8FF;
   text-decoration: none;
 }
-.thumb {
-  background-position: center center;
-  background-size: cover;
-  padding-bottom: 56%; /*or padding: 56% (all around)*/
-}
-.grid-container{
-  display: grid;
-  grid-gap: 1em;
-  grid-template-column: 1fr;
-  padding: 1em;
-}
-@media screen and (min-width: 550px) { /*for media screens that are 550 and above, set two columns, 1fr each*/
-.grid-container{grid-template-columns: repeat(2, 1fr);}
-}
-@media screen and (min-width: 768px) { /*for media screens that are 768 and above, set three columns, 1fr each. ipad, iphone portrait*/
-.grid-container{grid-template-columns: repeat(3, 1fr);}
-}
-@media screen and (min-width: 990px) { /*for media screens that are 990 and above, set four columns, 1fr each*/
-.grid-container{grid-template-columns: repeat(4, 1fr);}
-}
-.card{
-  border: 1px solid #333;
-}
-.card-content{padding: 1em;}
-
-.one .thumb{background-image: url('../img/nyu.jpg');}
-.two .thumb{background-image: url('../img/deer.jpg');}
-.three .thumb{background-image: url('../img/zion2.jpg');}
-.four .thumb{background-image: url('../img/market.jpg');}
-.five .thumb{background-image: url('../img/horses.jpg');}
-.six .thumb{background-image: url('../img/ocean-city.jpg');}
-.seven .thumb{background-image: url('../img/philly.jpg');}
-.eight .thumb{background-image: url('../img/pier.jpg');}
-.nine .thumb{background-image: url('../img/river.jpg');}
-.ten .thumb{background-image: url('../img/san-diego.jpg');}
-.eleven .thumb{background-image: url('../img/sunset-cliff.jpg');}
-.twelve .thumb{background-image: url('../img/zion.jpg');}
 
 /*slideshow rules*/
 .slideshow{
@@ -160,6 +123,43 @@ nav a:hover, nav a:active {
 .active, .dot:hover {
   opacity: 1; /*-- makes fully visible when hovered  --*/
 }
-.dot.active{
-  background: #333;
+.dot.active{background: #333;}
+
+/*article style*/
+.thumb {
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 56%; /*or padding: 56% (all around)*/
 }
+.grid-container{
+  display: grid;
+  grid-gap: 1em;
+  grid-template-column: 1fr;
+  padding: 1em;
+}
+@media screen and (min-width: 550px) { /*for media screens that are 550 and above, set two columns, 1fr each*/
+.grid-container{grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (min-width: 768px) { /*for media screens that are 768 and above, set three columns, 1fr each. ipad, iphone portrait*/
+.grid-container{grid-template-columns: repeat(3, 1fr);}
+}
+@media screen and (min-width: 990px) { /*for media screens that are 990 and above, set four columns, 1fr each*/
+.grid-container{grid-template-columns: repeat(4, 1fr);}
+}
+.card{
+  border: 1px solid #333;
+}
+.card-content{padding: 1em;}
+
+.one .thumb{background-image: url('../img/nyu.jpg');}
+.two .thumb{background-image: url('../img/deer.jpg');}
+.three .thumb{background-image: url('../img/zion2.jpg');}
+.four .thumb{background-image: url('../img/market.jpg');}
+.five .thumb{background-image: url('../img/horses.jpg');}
+.six .thumb{background-image: url('../img/ocean-city.jpg');}
+.seven .thumb{background-image: url('../img/philly.jpg');}
+.eight .thumb{background-image: url('../img/pier.jpg');}
+.nine .thumb{background-image: url('../img/river.jpg');}
+.ten .thumb{background-image: url('../img/san-diego.jpg');}
+.eleven .thumb{background-image: url('../img/sunset-cliff.jpg');}
+.twelve .thumb{background-image: url('../img/zion.jpg');}
